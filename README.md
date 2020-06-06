@@ -9,7 +9,7 @@ React-Native 0.60+
 
 ### Install
 
-`$ yarn add rn-asdk-TSC --save`
+`$ yarn add rn-tsc-printer --save`
 
 #### iOS
 

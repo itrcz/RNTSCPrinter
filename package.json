@@ -1,6 +1,6 @@
 {
   "name": "rn-tsc-printer",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "TSC Printer utility for react-native",
   "main": "index.ts",
   "scripts": {},
