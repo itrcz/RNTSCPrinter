@@ -30,7 +30,7 @@ import TSCPrinter from 'rn-tsc-printer';
 
 ```typescript
 const printer = new TSCPrinter({
-	ip: "192.168.1.39,
+	ip: "192.168.1.39",
 	port: 9100,
 	paperWidth: 60,
 	paperHeight: 30,
