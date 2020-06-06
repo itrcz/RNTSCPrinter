@@ -80,6 +80,10 @@ export class TSCPrinter {
         this.config = config
     }
 
+    public updateConfig(config: Types.Config) {
+        this.config = config
+    }
+
     public async setup(): Promise<Boolean> {
         const { width, height, speed, density, gap, bline, encoding } = this.config
 
