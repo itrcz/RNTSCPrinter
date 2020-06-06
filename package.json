@@ -1,0 +1,27 @@
+{
+  "name": "rn-tsc-printer",
+  "version": "0.1.0",
+  "description": "TSC Printer utility for react-native",
+  "main": "index.ts",
+  "scripts": {},
+  "keywords": [
+    "react-native",
+    "tsc",
+    "printer"
+  ],
+  "author": "Ilya Trikoz <i7t@me.com>",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/itrcz/RNTSCPrinter.git"
+  },
+  "homepage": "https://github.com/itrcz/RNTSCPrinter.git",
+  "license": "GNU",
+  "peerDependencies": {
+    "react-native": "^0.62.2"
+  },
+  "devDependencies": {
+    "typescript": "^3.9.3",
+    "@types/react": "^16.9.35",
+    "@types/react-native": "^0.62.2"
+  }
+}
