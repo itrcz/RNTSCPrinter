@@ -24,7 +24,6 @@ public class RNTSCPrinterModule extends ReactContextBaseJavaModule {
 
     TscWifiActivity Printer = null;
 
-
     @Override
     public String getName() {
         return "RNTSCPrinter";

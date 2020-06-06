@@ -16,7 +16,7 @@ public class RNTSCPrinterPackage implements ReactPackage {
 
     @Override
     public List<NativeModule> createNativeModules(ReactApplicationContext reactContext) {
-      return Arrays.<NativeModule>asList(new RNTSCPrinterModule(reactContext));
+      return Arrays.<NativeModule>asList(new RNTSCPrinterModule());
     }
 
     // Deprecated from RN 0.47
