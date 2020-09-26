@@ -8,54 +8,23 @@
  * @format
  */
 
-import React, { useState, useEffect } from 'react';
-import { SafeAreaView, StatusBar, Alert, View, Button } from 'react-native';
-import TSCPrinter from 'rn-tsc-printer'
+import React, { useState } from 'react';
+import { SafeAreaView, StatusBar, Text, View } from 'react-native';
+import Mera from 'rn-mera';
 
-const printer = new TSCPrinter({
-  ip: '192.168.1.39',
-  port: 9100,
-  width: 60,
-  height: 30,
+const device = Mera.connect({
+  ip: '192.168.1.166',
+  port: 1001,
 })
 
 const App = () => {
-  const [busy, setBusy] = useState(false)
+  const [value, setValue] = useState('0')
   return (
     <>
       <StatusBar barStyle="dark-content" />
       <SafeAreaView>
         <View style={{ padding: 40, justifyContent: "center" }}>
-          <Button
-            title={busy ? '...waiting...' : 'Print'}
-            disabled={busy}
-            onPress={async () => {
-              if (busy) return
-              try {
-                setBusy(true)
-                await printer.open()
-                await printer.clear()
-                await printer.setup()
-                await printer.barcode({
-                  x: 20,
-                  y: 90,
-                  height: 100,
-                  narrow: 2,
-                  wide: 0,
-                  printText: false,
-                  rotation: 0,
-                  type: '128',
-                  code: '1234567890'
-                })
-                await printer.print(1,1)
-                await printer.close()
-              } catch (error) {
-                console.error(error)
-              } finally {
-                setBusy(false)
-              }
-            }}
-          />
+          <Text>{value}</Text>
         </View>
       </SafeAreaView>
     </>

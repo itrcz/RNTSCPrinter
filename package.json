@@ -1,20 +1,20 @@
 {
-  "name": "rn-tsc-printer",
-  "version": "0.1.6",
-  "description": "TSC Printer utility for react-native",
+  "name": "rn-mera",
+  "version": "0.0.1",
+  "description": "Mera weight connector utility for react-native",
   "main": "index.ts",
   "scripts": {},
   "keywords": [
     "react-native",
-    "tsc",
-    "printer"
+    "Мера",
+    "mera-device"
   ],
   "author": "Ilya Trikoz <i7t@me.com>",
   "repository": {
     "type": "git",
-    "url": "https://github.com/itrcz/RNTSCPrinter.git"
+    "url": "https://github.com/itrcz/RNMera.git"
   },
-  "homepage": "https://github.com/itrcz/RNTSCPrinter.git",
+  "homepage": "https://github.com/itrcz/RNMera.git",
   "license": "GNU",
   "peerDependencies": {
     "react-native": "^0.62.2"

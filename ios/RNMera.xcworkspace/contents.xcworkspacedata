@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:RNTSCPrinter.xcodeproj">
+      location = "group:RNMera.xcodeproj">
    </FileRef>
 </Workspace>
