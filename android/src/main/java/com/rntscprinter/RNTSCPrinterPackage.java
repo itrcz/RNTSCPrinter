@@ -1,5 +1,5 @@
 
-package com.rnmera;
+package com.rntscprinter;
 
 import java.util.Arrays;
 import java.util.Collections;
@@ -11,28 +11,12 @@ import com.facebook.react.bridge.ReactApplicationContext;
 import com.facebook.react.uimanager.ViewManager;
 import com.facebook.react.bridge.JavaScriptModule;
 
-import org.apache.commons.net.telnet.TelnetClient;
+public class RNTSCPrinterPackage implements ReactPackage {
 
-public class RNMeraPackage implements ReactPackage {
-
-    private TelnetConnection client;
-
-    private OutputStream outstream;
-    private TelnetClient rawConnection;
-    private InputStream instream;
-
-
-    public TelnetClient(String ip, int port) throws IOException {
-        client = new TelnetConnection(ip, port);
-        client.connect();
-        rawConnection = client.getConnection();
-        outstream = client.getOutput();
-        instream = client.getReader();
-    }
 
     @Override
     public List<NativeModule> createNativeModules(ReactApplicationContext reactContext) {
-      return Arrays.<NativeModule>asList(new RNMeraModule());
+      return Arrays.<NativeModule>asList(new RNTSCPrinterModule());
     }
 
     // Deprecated from RN 0.47
